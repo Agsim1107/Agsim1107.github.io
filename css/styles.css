@@ -1,0 +1,170 @@
+/* ===== Global Reset & Base Styling ===== */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #faf7f2;
+    color: #4a4a4a;
+}
+
+header, nav, main, footer {
+    display: block;
+}
+
+/* ===== Header ===== */
+header {
+    background-image: url("../images/cottage.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+/* ===== Layout Wrapper ===== */
+#wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    line-height: 1.7;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background-color: #d7c9b8;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #4a3f35;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav a:active {
+    color: green;
+}
+
+/* ===== Main Content ===== */
+main {
+    background-color: #ffffcc;
+    padding: 1px 20px 20px;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+main img {
+    width: 50%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* ===== Event List ===== */
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.event-list img {
+    border-radius: 2px;
+    width: 150px;
+    height: auto;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #ffffcc;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    .event-list li {
+        gap: 10px;
+    }
+
+    .event-list img {
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 80px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Stack nav links vertically on mobile */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Stack event image above text */
+    .event-list li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-list img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #wrapper {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
