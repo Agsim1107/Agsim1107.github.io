@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hideaway Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/store.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <ul> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms/master-bedroom.html">Master Bedroom</a></li>
+        <li><a href="rooms/second-bedroom.html">Second Bedroom</a></li>
+        <li><a href="events/activities.html">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="estimate.html">Estimate</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="store.html" class="active">Store</a></li>
+    </ul>
+</nav>
+
+<h1>Hideaway Online Store</h1>
+
+<section id="products">
+
+    <div class="product">
+        <img src="images/product5.jpg">
+        <h3>Cottage Mug</h3>
+        <p>$9.99</p>
+        <button onclick="addToCart('Cottage Mug', 9.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/product3.jpg">
+        <h3>Luxury Bath Kit</h3>
+        <p>$24.99</p>
+        <button onclick="addToCart('Luxury Bath Kit', 24.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/product2.jpg">
+        <h3>Warm Blanket</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Warm Blanket', 19.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/product4.jpg">
+        <h3>Premium Coffee</h3>
+        <p>$14.99</p>
+        <button onclick="addToCart('Premium Coffee', 14.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="images/product1.jpg">
+        <h3>Scented Candle</h3>
+        <p>$12.99</p>
+        <button onclick="addToCart('Scented Candle', 12.99)">Add to Cart</button>
+    </div>
+
+</section>
+
+<br>
+<a href="cart.html"><button>🛒 View Cart</button></a>
+
+<p id="message"></p>
+
+</body>
+</html>

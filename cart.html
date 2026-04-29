@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/cart.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <ul> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms/master-bedroom.html">Master Bedroom</a></li>
+        <li><a href="rooms/second-bedroom.html">Second Bedroom</a></li>
+        <li><a href="events/activities.html">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="estimate.html">Estimate</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="store.html">Store</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+
+    <h1>Your Shopping Cart</h1>
+
+    <!-- CART ITEMS -->
+    <div id="cartItems"></div>
+
+    <!-- CHECKOUT -->
+    <h2>Checkout</h2>
+
+    <form id="orderForm">
+
+        <div class="form-grid">
+
+            <div>
+                <h3>Billing Info</h3>
+                Name: <input type="text" id="name"><br>
+                Email: <input type="text" id="email"><br>
+                Zip: <input type="text" id="zip"><br>
+            </div>
+
+            <div>
+                <h3>Shipping Info</h3>
+                Address: <input type="text" id="shipAddress"><br>
+                City: <input type="text" id="shipCity"><br>
+
+                <label>
+                    <input type="checkbox" onclick="copyInfo()"> Same as Billing
+                </label>
+            </div>
+
+        </div>
+
+        <br>
+        <button type="submit">Submit Order</button>
+
+    </form>
+
+    <p id="confirmation" class="success-msg">
+        Order submitted successfully!
+    </p>
+
+    <br>
+    <a href="store.html">← Back to Store</a>
+
+</div>
+
+</body>
+</html>
